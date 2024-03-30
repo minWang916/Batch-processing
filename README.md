@@ -30,15 +30,11 @@ But I split it into 3 seperate files ( <b> <i> Telco_customer_churn1.csv,Telco_c
 ### Technologies used
 - Python
 - Airflow
-- AWS services : 
-  - EC2 (hosting Airflow)
-  - S3 (Data Warehouse)
-  - Glue Crawler, Glue Data Catalog (Data processing - assemble pieces of data)
-  - Redshift (Data Analytics)
-  - PowerBI (Data Visualization)
+- AWS services: EC2, S3, Glue Crawler, Glue Data Catalog, Redshift
+- PowerBI 
 
 ## 2. Implementation overview 
-Design data models for OLTP database (PostgreSQL) and data warehouse (Amazon Redshift). Build an ETL pipeline to transform raw data into actionable insights in PostgreSQL, also store them in S3 for staging. Then implement another ETL pipeline which process data from S3 and load them to Amazon Redshift for enhanced data analytics . Using Airflow to orchestrate pipeline workflow, Terraform for setting up AWS Redshift cluster, and Docker to containerize the project - allow for fast build, test, and deploy project.
+An ETL pipeline to collect raw data into actionable insights to store them in Amazon S3 for staging. Then implement another ETL pipeline which process data from S3 and load them to Amazon Glue Crawler for analyzing data structure and schema, which are then stored in Amazon Glue Data Catalog. After that, Airflow delivers the structured data to Amazon Redshift (Data warehouse) and ultimately loaded from there to powerBI for visualization. Amazon Athena is also used for querying data directly from s3 and it is just for checking purpose. 
 
 ![System design](https://github.com/minWang916/Batch-processing/assets/116493016/e49939ec-48cd-440c-9d3a-938a690ff270)
 
