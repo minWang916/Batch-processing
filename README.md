@@ -1,1 +1,1 @@
-# Data-Pipeline-and-Analytic
+# ETL pipeline, data modeling, warehousing and visualization of Telco customer churn: IBM dataset
