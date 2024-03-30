@@ -30,7 +30,8 @@ But I split it into 3 seperate files ( <b> <i> Telco_customer_churn1.csv,Telco_c
 ### Technologies used
 - Python
 - Airflow
-- AWS services : S3, Glue Crawler, Glue Data Catalog, Redshift, PowerBI
+- AWS services : 
+  - EC2, S3, Glue Crawler, Glue Data Catalog, Redshift, PowerBI
 
 ## 2. Implementation overview 
 Design data models for OLTP database (PostgreSQL) and data warehouse (Amazon Redshift). Build an ETL pipeline to transform raw data into actionable insights in PostgreSQL, also store them in S3 for staging. Then implement another ETL pipeline which process data from S3 and load them to Amazon Redshift for enhanced data analytics . Using Airflow to orchestrate pipeline workflow, Terraform for setting up AWS Redshift cluster, and Docker to containerize the project - allow for fast build, test, and deploy project.
