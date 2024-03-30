@@ -19,17 +19,16 @@
 
 
 ## 1. Introduction 
-Data is collected from an e-commerce company about their sales in 2022, the company's analytic teams is interested in understanding their business situation in the last year. We will build ETL pipelines which will transform raw data into actionable insights, store them in OLTP database (PostgreSQL) and OLAP database (Amazon Redshift) for enhanced data analytics capabilities.
+Batch processing is a method of processing data where a group of data items is collected, processed, and executed together as a single unit. Instead of processing individual transactions in real-time, batch processing allows for the processing of multiple transactions at once, usually in a sequential manner. In this case, I use the data from Telco company customer data and work as a data engineer who collects the data batch after a period of time and analyse the data. The job consists of producing a data pipeline to gather the data from data source, store it in a datawarehouse and furher use it for analytical purpose.
 
-Data include 4 csv files : <b> <i> Sales, Products, Shipments, Customers. </i> </b>
+<b>Source of data: </b> https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset?resource=download
+
+Data includes a single csv file : <b> <i> Sales, Products, Shipments, Customers. </i> </b>
 
 ### Technologies used
 - Python
-- PostgreSQL
 - Airflow
-- Terraform (Infrastructure provisioning tool)
-- AWS services : S3, Redshift (data warehouse)
-- Docker
+- AWS services : S3, Glue Crawler, Glue Data Catalog, Redshift, PowerBI
 
 ## 2. Implementation overview 
 Design data models for OLTP database (PostgreSQL) and data warehouse (Amazon Redshift). Build an ETL pipeline to transform raw data into actionable insights in PostgreSQL, also store them in S3 for staging. Then implement another ETL pipeline which process data from S3 and load them to Amazon Redshift for enhanced data analytics . Using Airflow to orchestrate pipeline workflow, Terraform for setting up AWS Redshift cluster, and Docker to containerize the project - allow for fast build, test, and deploy project.
