@@ -40,7 +40,7 @@ But I split it into 3 seperate files ( <b> <i> Telco_customer_churn1.csv,Telco_c
 ## 2. Implementation overview 
 Design data models for OLTP database (PostgreSQL) and data warehouse (Amazon Redshift). Build an ETL pipeline to transform raw data into actionable insights in PostgreSQL, also store them in S3 for staging. Then implement another ETL pipeline which process data from S3 and load them to Amazon Redshift for enhanced data analytics . Using Airflow to orchestrate pipeline workflow, Terraform for setting up AWS Redshift cluster, and Docker to containerize the project - allow for fast build, test, and deploy project.
 
-<img src = assets/Airflow%20conceptual%20view.png alt = "Airflow conceptual view">
+![System design](https://github.com/minWang916/Batch-processing/assets/116493016/e49939ec-48cd-440c-9d3a-938a690ff270)
 
 ## 3. Design 
 <div style="display: flex; flex-direction: column;">
