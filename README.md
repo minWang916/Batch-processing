@@ -67,45 +67,16 @@ An ETL pipeline to collect raw data into actionable insights to store them in Am
 ```bash
 
 Batch-Processing/
-  ├── airflow/
-  │   ├── dags/
-  │   │   ├── dags_setup.py
-  │   │   ├── ETL_psql
-  │   │   │   ├── Extract
-  │   │   │   │   └── Extract.py
-  │   │   │   ├── Load/
-  │   │   │   │   └── Load_psql.py
-  │   │   │   └── Transform
-  │   │   │       ├── Rename_col_df.py
-  │   │   │       ├── Transform.py
-  │   │   │       ├── Transform_customers.py
-  │   │   │       ├── Transform_locations.py
-  │   │   │       ├── Transform_products.py
-  │   │   │       ├── Transform_shipments.py
-  │   │   │       └── Transfrom_sales.py
-  │   │   └── ETL_redshift
-  │   │       ├── ETL_psql_s3.py
-  │   │       └── Load_s3_to_redshift.py
-  │   └── logs
-  ├── postgreSQL_setup
-  │   └── create_pgsql_schema.sql
-  ├── redshift_setup
-  │   └── create_redshift_schema.sql
-  ├── docker
-  │   ├── Dockerfile
-  │   └── requirements.txt
-  ├── docker-compose.yaml
-  ├── Implementation detail.md
-  ├── assets
-  │   └── Many images.png
-  ├── Input_data
-  ├── Transformed_data
-  ├── Makefile
-  ├── terraform
-  │   ├── main.tf
-  │   ├── terraform.tfvars
-  │   └── variables.tf
-  └── readme.md
+  ├── data/
+  │   ├── Telco_customer_churn.csv
+  │   ├── Telco_customer_churn.xlsx
+  │   │── Telco_customer_churn1.csv
+  │   │── Telco_customer_churn2.csv
+  │   │── Telco_customer_churn3.csv
+  │── customer_churn_dag.py 
+  │── requirements.txt  
+  │── README.md   
+
 ```
 <br>
 
