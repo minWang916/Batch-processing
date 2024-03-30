@@ -38,7 +38,7 @@ An ETL pipeline to collect raw data into actionable insights to store them in Am
 
 ![System design](https://github.com/minWang916/Batch-processing/assets/116493016/e49939ec-48cd-440c-9d3a-938a690ff270)
 
-![airflow](https://github.com/minWang916/Batch-processing/assets/116493016/d5b21287-605d-40b1-adf8-f47421cdc264)
+
 
 
 ## 3. Design 
@@ -50,19 +50,9 @@ An ETL pipeline to collect raw data into actionable insights to store them in Am
 <p>Statistical charts and graphs</p>
 ![graphs](https://github.com/minWang916/Batch-processing/assets/116493016/4daf2f09-a2d0-4747-8c61-ffc1d410573c)
 
-<br> <br>
 
-<div style="display: flex; flex-direction: column;">
-  <img src=assets/Star%20schema.png alt="Star schema" width="600" height="500">
-  <p style="text-align: center;"> <b> <i> Data model (star schema) for Redshift </i> </b> </p>
-</div>
 
-<br> <br>
 
-<div style="display: flex; flex-direction: column;">
-  <img src=assets/Airflow_workflow.png alt="Star schema" width="900" height="500">
-  <p style="text-align: center;"> <b> <i> Airflow workflow </i> </b> </p>
-</div>
 
 
 ## 4. Project Structure
