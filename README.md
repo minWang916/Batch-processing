@@ -34,7 +34,7 @@ But I split it into 3 seperate files ( <b> <i> Telco_customer_churn1.csv,Telco_c
 - PowerBI 
 
 ## 2. Implementation overview 
-An ETL pipeline to collect raw data into actionable insights to store them in Amazon S3 for staging. Then implement another ETL pipeline which process data from S3 and load them to Amazon Glue Crawler for analyzing data structure and schema, which are then stored in Amazon Glue Data Catalog. After that, Airflow delivers the structured data to Amazon Redshift (Data warehouse) and ultimately loaded from there to powerBI for visualization. Amazon Athena is also used for querying data directly from s3 and it is just for checking purpose. 
+An ETL pipeline to collect raw data into actionable insights to store them in Amazon S3 for staging. Then implement another Airflow ETL pipeline which process data from S3 and load them to Amazon Glue Crawler for analyzing data structure and schema, which are then stored in Amazon Glue Data Catalog. After that, Airflow delivers the structured data to Amazon Redshift (Data warehouse) and ultimately loaded from there to powerBI for visualization. Amazon Athena is also used for querying data directly from s3 and it is just for checking purpose. 
 
 ![System design](https://github.com/minWang916/Batch-processing/assets/116493016/e49939ec-48cd-440c-9d3a-938a690ff270)
 
