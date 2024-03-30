@@ -38,6 +38,9 @@ An ETL pipeline to collect raw data into actionable insights to store them in Am
 
 ![System design](https://github.com/minWang916/Batch-processing/assets/116493016/e49939ec-48cd-440c-9d3a-938a690ff270)
 
+![airflow](https://github.com/minWang916/Batch-processing/assets/116493016/d5b21287-605d-40b1-adf8-f47421cdc264)
+
+
 ## 3. Design 
 <div style="display: flex; flex-direction: column;">
   <img src=assets/Data%20model.png alt="Data model" width="600" height="500">
