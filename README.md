@@ -23,7 +23,8 @@ Batch processing is a method of processing data where a group of data items is c
 
 <b>Source of data: </b> https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset?resource=download
 
-Data includes a single csv file : <b> <i> Sales, Products, Shipments, Customers. </i> </b>
+Data includes a single csv file : <b> <i> Telco_customer_churn.csv </i> </b>
+But I split it into 3 seperate files ( <b> <i> Telco_customer_churn1.csv,Telco_customer_churn2.csv,Telco_customer_churn3.csv </i> </b>) to mimic real life usage as there might be multiple data sources and the pipeline should also be able to assemble the data (AWS Glue).
 
 ### Technologies used
 - Python
