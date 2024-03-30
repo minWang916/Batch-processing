@@ -42,10 +42,13 @@ An ETL pipeline to collect raw data into actionable insights to store them in Am
 
 
 ## 3. Design 
-<div style="display: flex; flex-direction: column;">
-  <img src=assets/Data%20model.png alt="Data model" width="600" height="500">
-  <p style="text-align: center;"> <b> <i> Data model for Postgres </i> </b> </p>
-</div>
+
+<p>Airflow system</p>
+![Untitled](https://github.com/minWang916/Batch-processing/assets/116493016/34bbeb8b-2d04-4919-9507-568b6fbf0ad5)
+
+
+<p>Statistical charts and graphs</p>
+![graphs](https://github.com/minWang916/Batch-processing/assets/116493016/4daf2f09-a2d0-4747-8c61-ffc1d410573c)
 
 <br> <br>
 
