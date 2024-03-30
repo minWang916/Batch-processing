@@ -43,10 +43,10 @@ An ETL pipeline to collect raw data into actionable insights to store them in Am
 
 ## 3. Design 
 
-
+#### Airflow system
 ![Untitled](https://github.com/minWang916/Batch-processing/assets/116493016/34bbeb8b-2d04-4919-9507-568b6fbf0ad5)
 
-
+#### Statistical charts and graphs
 ![graphs](https://github.com/minWang916/Batch-processing/assets/116493016/4daf2f09-a2d0-4747-8c61-ffc1d410573c)
 
 
